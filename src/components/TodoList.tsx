@@ -124,6 +124,7 @@ export default function TodoList({ initialTodos }: { initialTodos: Todo[] }) {
                 max="72"
                 placeholder="e.g. 2"
                 value={reminderHours}
+                
                 onChange={(e) => setReminderHours(e.target.value === '' ? '' : Number(e.target.value))}
                 className="w-20 px-2 py-1 border border-gray-200 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 outline-none"
               />
